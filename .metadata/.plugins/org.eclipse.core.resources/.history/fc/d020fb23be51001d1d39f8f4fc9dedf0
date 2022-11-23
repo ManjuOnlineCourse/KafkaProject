@@ -1,0 +1,21 @@
+package com.my.hotel.Cosumer;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.client.RestTemplate;
+
+public class RestCusumer {
+	public void getProductAsJson() {
+        RestTemplate restTemplate = new RestTemplate();
+
+        String resourceUrl
+          = "http://localhost:8080/products";
+
+        // Fetch JSON response as String wrapped in ResponseEntity
+        ResponseEntity<String> response
+          = restTemplate.getForEntity(resourceUrl, String.class);
+        
+        String productsJson = response.getBody();
+        
+        System.out.println(productsJson);
+    }
+}

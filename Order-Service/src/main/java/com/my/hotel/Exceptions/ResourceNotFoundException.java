@@ -1,0 +1,22 @@
+package com.my.hotel.Exceptions;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class ResourceNotFoundException extends RuntimeException{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private String resource;
+	private String fieldName;
+	private Long fieldValue;
+	public ResourceNotFoundException(String resource, String fieldName, Long id) {
+		super(String.format("%s not found with %s : %s",resource,fieldName,id));
+		this.resource = resource;
+		this.fieldName = fieldName;
+		this.fieldValue = id;
+	}
+}
