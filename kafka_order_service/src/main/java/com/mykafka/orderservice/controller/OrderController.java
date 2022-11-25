@@ -9,9 +9,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.mykafka.base_domains.dto.Order;
-import com.mykafka.base_domains.dto.OrderEvent;
+
 import com.mykafka.orderservice.Kafka.OrderProducer;
+import com.mykafka.orderservice.dto.Order;
+import com.mykafka.orderservice.dto.OrderEvent;
 
 @RestController
 @RequestMapping("/api/order")

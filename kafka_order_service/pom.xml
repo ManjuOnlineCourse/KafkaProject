@@ -11,6 +11,7 @@
 	</parent>
 	<groupId>com.myKafka</groupId>
 	<artifactId>kafka_order_service</artifactId>
+	<packaging>jar</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>kafka_order_service</name>
 	<description>Demo project for Spring Boot</description>
@@ -43,9 +44,9 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.myKafka</groupId>
-			<artifactId>kafka_base_domains</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
 		</dependency>
 	</dependencies>
 

@@ -1,0 +1,153 @@
+2022-11-24 12:05:10,921 INFO org.springframework.boot.StartupInfoLogger [main] Starting KafkaStockServiceApplication using Java 17.0.4 on DESKTOP-JJHKPU3 with PID 4376 (D:\Hotel\kafka_stock_service\target\classes started by 91814 in D:\Hotel\kafka_stock_service)
+2022-11-24 12:05:10,926 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-11-24 12:05:11,783 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-24 12:05:11,865 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interfaces.
+2022-11-24 12:05:12,888 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2022-11-24 12:05:12,905 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2022-11-24 12:05:12,907 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-11-24 12:05:12,908 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-24 12:05:13,120 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-11-24 12:05:13,121 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2086 ms
+2022-11-24 12:05:13,699 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-24 12:05:13,879 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-24 12:05:14,318 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-24 12:05:14,566 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-11-24 12:05:15,180 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-11-24 12:05:15,207 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-11-24 12:05:16,588 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-24 12:05:16,616 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-24 12:05:17,157 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-24 12:05:17,980 INFO org.apache.kafka.common.config.AbstractConfig [main] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-stock-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = stock
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2022-11-24 12:05:18,146 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka version: 3.1.2
+2022-11-24 12:05:18,146 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka commitId: f8c67dc3ae0a3265
+2022-11-24 12:05:18,146 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka startTimeMs: 1669271718144
+2022-11-24 12:05:18,152 INFO org.apache.kafka.clients.consumer.KafkaConsumer [main] [Consumer clientId=consumer-stock-1, groupId=stock] Subscribed to topic(s): order_topic
+2022-11-24 12:05:18,177 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2022-11-24 12:05:18,200 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2022-11-24 12:05:18,217 INFO org.springframework.boot.StartupInfoLogger [main] Started KafkaStockServiceApplication in 8.11 seconds (JVM running for 9.754)
+2022-11-24 12:05:18,964 INFO org.apache.kafka.clients.Metadata [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-stock-1, groupId=stock] Resetting the last seen epoch of partition order_topic-0 to 0 since the associated topicId changed from null to Wr3-4D1mSp2TLxahvjJ2fA
+2022-11-24 12:05:18,968 INFO org.apache.kafka.clients.Metadata [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-stock-1, groupId=stock] Cluster ID: Lf_ffucwR0qg0HqAF8sA3g
+2022-11-24 12:05:18,970 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-stock-1, groupId=stock] Discovered group coordinator DESKTOP-JJHKPU3.mshome.net:9092 (id: 2147483647 rack: null)
+2022-11-24 12:05:18,977 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-stock-1, groupId=stock] (Re-)joining group
+2022-11-24 12:05:19,007 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-stock-1, groupId=stock] Request joining group due to: need to re-join with the given member-id
+2022-11-24 12:05:19,009 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-stock-1, groupId=stock] (Re-)joining group
+2022-11-24 12:05:19,018 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$JoinGroupResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-stock-1, groupId=stock] Successfully joined group with generation Generation{generationId=11, memberId='consumer-stock-1-720a68d2-0b70-46ff-a0d7-dabaf89f31de', protocol='range'}
+2022-11-24 12:05:19,022 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-stock-1, groupId=stock] Finished assignment for group at generation 11: {consumer-stock-1-720a68d2-0b70-46ff-a0d7-dabaf89f31de=Assignment(partitions=[order_topic-0])}
+2022-11-24 12:05:19,040 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-stock-1, groupId=stock] Successfully synced group in generation Generation{generationId=11, memberId='consumer-stock-1-720a68d2-0b70-46ff-a0d7-dabaf89f31de', protocol='range'}
+2022-11-24 12:05:19,041 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-stock-1, groupId=stock] Notifying assignor about the new Assignment(partitions=[order_topic-0])
+2022-11-24 12:05:19,046 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-stock-1, groupId=stock] Adding newly assigned partitions: order_topic-0
+2022-11-24 12:05:19,062 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-stock-1, groupId=stock] Setting offset for partition order_topic-0 to the committed offset FetchPosition{offset=9, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-JJHKPU3.mshome.net:9092 (id: 0 rack: null)], epoch=0}}
+2022-11-24 12:05:19,064 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] stock: partitions assigned: [order_topic-0]
+2022-11-24 12:07:11,648 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(6)-127.0.0.1] Application shutdown requested.
+2022-11-24 12:07:11,667 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(6)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8082"]
+2022-11-24 12:07:11,668 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(6)-127.0.0.1] Stopping service [Tomcat]
+2022-11-24 12:07:11,677 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(6)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8082"]
+2022-11-24 12:07:11,681 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(6)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8082"]
+2022-11-24 12:07:11,685 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-stock-1, groupId=stock] Revoke previously assigned partitions order_topic-0
+2022-11-24 12:07:11,686 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] stock: partitions revoked: [order_topic-0]
+2022-11-24 12:07:11,687 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-stock-1, groupId=stock] Member consumer-stock-1-720a68d2-0b70-46ff-a0d7-dabaf89f31de sending LeaveGroup request to coordinator DESKTOP-JJHKPU3.mshome.net:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2022-11-24 12:07:11,688 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-stock-1, groupId=stock] Resetting generation due to: consumer pro-actively leaving the group
+2022-11-24 12:07:11,688 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-stock-1, groupId=stock] Request joining group due to: consumer pro-actively leaving the group
+2022-11-24 12:07:11,688 INFO org.apache.kafka.clients.consumer.KafkaConsumer [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-stock-1, groupId=stock] Unsubscribed all topics or patterns and assigned partitions
+2022-11-24 12:07:11,689 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-stock-1, groupId=stock] Resetting generation due to: consumer pro-actively leaving the group
+2022-11-24 12:07:11,689 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-stock-1, groupId=stock] Request joining group due to: consumer pro-actively leaving the group
+2022-11-24 12:07:11,698 INFO org.apache.kafka.common.metrics.Metrics [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metrics scheduler closed
+2022-11-24 12:07:11,698 INFO org.apache.kafka.common.metrics.Metrics [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-11-24 12:07:11,698 INFO org.apache.kafka.common.metrics.Metrics [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Metrics reporters closed
+2022-11-24 12:07:11,705 INFO org.apache.kafka.common.utils.AppInfoParser [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] App info kafka.consumer for consumer-stock-1 unregistered
+2022-11-24 12:07:11,706 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] stock: Consumer stopped
+2022-11-24 12:07:11,714 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(6)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-24 12:07:11,717 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(6)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-11-24 12:07:11,735 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(6)-127.0.0.1] HikariPool-1 - Shutdown completed.

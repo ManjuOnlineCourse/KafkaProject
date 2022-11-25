@@ -10,8 +10,12 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="order_topic"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="build("/>
+			<item value="build"/>
+			<item value="setHeader"/>
+			<item value="withPayload"/>
 			<item value="order_topic"/>
 			<item value="laptop"/>
 			<item value="spring.kafka.topic.name"/>

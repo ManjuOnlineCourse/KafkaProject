@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javax.persistence.Id"/>
-    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
-    <fullyQualifiedTypeName name="javax.persistence.Table"/>
-    <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
-    <fullyQualifiedTypeName name="javax.persistence.Column"/>
-    <fullyQualifiedTypeName name="lombok.Getter"/>
-    <fullyQualifiedTypeName name="lombok.Setter"/>
-    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
-    <fullyQualifiedTypeName name="com.my.hotel.Repo.AccountRepo"/>
     <fullyQualifiedTypeName name="com.my.hotel.Service.AccountService"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="org.springframework.web.client.RestTemplate"/>
     <fullyQualifiedTypeName name="org.springframework.http.HttpHeaders"/>
@@ -29,7 +16,6 @@
     <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
     <fullyQualifiedTypeName name="org.springframework.kafka.config.TopicBuilder"/>
     <fullyQualifiedTypeName name="org.apache.kafka.clients.admin.NewTopic"/>
     <fullyQualifiedTypeName name="org.apache.logging.log4j.Logger"/>
@@ -42,7 +28,6 @@
     <fullyQualifiedTypeName name="com.mykafka.orderservice.Kafka.OrderConsumer"/>
     <fullyQualifiedTypeName name="org.springframework.kafka.annotation.KafkaListener"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
     <fullyQualifiedTypeName name="com.mykafka.base_domains.dto.Order"/>
@@ -52,5 +37,27 @@
     <fullyQualifiedTypeName name="com.mykafka.orderservice.Kafka.OrderProducer"/>
     <fullyQualifiedTypeName name="java.util.UUID"/>
     <fullyQualifiedTypeName name="com.mykafka.base_domains.dto.OrderEvent"/>
+    <fullyQualifiedTypeName name="org.springframework.util.concurrent.ListenableFutureCallback"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
+    <fullyQualifiedTypeName name="javax.annotation.Generated"/>
+    <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="com.mykafka.orderservice.repo.OrderRepo"/>
+    <fullyQualifiedTypeName name="com.mykafka.orderservice.Service.OrderService"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="com.mykafka.orderservice.dto.Order"/>
+    <fullyQualifiedTypeName name="com.mykafka.emailservice.dto.OrderEvent"/>
+    <fullyQualifiedTypeName name="com.mykafka.orderservice.dto.OrderEvent"/>
+    <fullyQualifiedTypeName name="com.mykafka.orderservice.Entity.Order"/>
+    <fullyQualifiedTypeName name="org.springframework.kafka.support.converter.StringJsonMessageConverter"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.aws.Service.MailService"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+    <fullyQualifiedTypeName name="org.springframework.mail.SimpleMailMessage"/>
 </qualifiedTypeNameHistroy>
